@@ -4,10 +4,10 @@ import { useTheme } from "next-themes"
 
 import { Button } from "@/components/ui/button"
 import {
-   DropdownMenu,
-   DropdownMenuContent,
-   DropdownMenuItem,
-   DropdownMenuTrigger,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Link from "next/link"
 
@@ -15,9 +15,11 @@ const Header = () => {
   const { setTheme } = useTheme()
 
   return (
-     <div className="container bg-white/30 py-2 backdrop-blur-lg flex items-center justify-between">
+     <div className="container bg-white/20 border-b-[0.5px] dark:border-white py-2 backdrop-blur-lg flex items-center justify-between">
         <div className="flex justify-around gap-5">
+        <Link href='/'>
            <h1>Happy UI</h1>
+        </Link>
            <div className="space-x-5">
               <Link href="/documents">Documents</Link>
               <Link href="/components">Components</Link>
